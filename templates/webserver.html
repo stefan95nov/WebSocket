@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stefan Novakovic E1 38/2019</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+	</head>
+	<body>
+		<div class="block3">
+			<h1 class="heading0">Welcome to my Raspberry Pi</h1>
+		</div>
+		<div class="block1">
+			<form action="/" method="POST">
+			<h1>Control Step Motor NEMA17:</h1>
+			<div>
+				<input class="button1" type="submit" name="submit" value="Accelerate">
+				<input class="button2" type="submit" name="submit" value="Deaccelerate">
+			</div>
+			<div>
+				<input class="button3" type="submit" name="submit" value="CW">
+				<input class="button4" type="submit" name="submit" value="CCW">
+			</div>
+			</form>
+			<div>
+				<h2 class="heading1">PWM of Step Motor is <em>{{PWM}}%</em></h2>
+				<h2 class="heading2">Direction of Step Motor is <strong>{{Direction}}</strong></h2>
+			</div>
+		</div>
+		<div class="block2">
+			<img src="https://www.elektor.com/media/catalog/product/cache/1404d1bfd8e1ad71cc6f16950ff5c805/r/a/raspberry-pi-4-8gb.jpg">
+		</div>	
+		<div class="main_footer">
+			<footer>
+				<p>Copyright &copy; 2021, My Website</p>
+			</footer>
+		</div>
+	</body>
+</html>
